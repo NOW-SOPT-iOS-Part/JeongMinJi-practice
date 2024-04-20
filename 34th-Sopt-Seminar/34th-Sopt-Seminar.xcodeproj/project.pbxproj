@@ -24,6 +24,16 @@
 		2DA6CB032BB9CBDE00BDB26A /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DA6CAFA2BB9CBDE00BDB26A /* Pretendard-Light.otf */; };
 		2DA6CB042BB9CBDE00BDB26A /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DA6CAFB2BB9CBDE00BDB26A /* Pretendard-Bold.otf */; };
 		2DA6CB052BB9CBDE00BDB26A /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DA6CAFC2BB9CBDE00BDB26A /* Pretendard-Black.otf */; };
+		2DD60FDB2BC1149C00B362F1 /* LoginViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD60FDA2BC1149C00B362F1 /* LoginViewController_DelegatePattern.swift */; };
+		2DD60FDD2BC114AD00B362F1 /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD60FDC2BC114AD00B362F1 /* WelcomeViewController_DelegatePattern.swift */; };
+		2DD60FDF2BC11BA500B362F1 /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD60FDE2BC11BA500B362F1 /* WelcomeViewController_Closure.swift */; };
+		2DD60FE12BC11BAD00B362F1 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD60FE02BC11BAD00B362F1 /* LoginViewController_Closure.swift */; };
+		2DD60FE62BC123ED00B362F1 /* WelcomeViewController_AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD60FE52BC123ED00B362F1 /* WelcomeViewController_AutoLayout.swift */; };
+		2DD60FE82BC123FE00B362F1 /* LoginViewController_AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD60FE72BC123FE00B362F1 /* LoginViewController_AutoLayout.swift */; };
+		2DD60FEB2BC127AE00B362F1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD60FEA2BC127AE00B362F1 /* SnapKit */; };
+		2DD60FEE2BC1297200B362F1 /* WelcomeViewController_SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD60FED2BC1297200B362F1 /* WelcomeViewController_SnapKit.swift */; };
+		2DD60FF02BC1298800B362F1 /* LoginViewController_SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD60FEF2BC1298800B362F1 /* LoginViewController_SnapKit.swift */; };
+		2DD60FF32BC131A000B362F1 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD60FF22BC131A000B362F1 /* ScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +75,15 @@
 		2DA6CAFA2BB9CBDE00BDB26A /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
 		2DA6CAFB2BB9CBDE00BDB26A /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		2DA6CAFC2BB9CBDE00BDB26A /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		2DD60FDA2BC1149C00B362F1 /* LoginViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_DelegatePattern.swift; sourceTree = "<group>"; };
+		2DD60FDC2BC114AD00B362F1 /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
+		2DD60FDE2BC11BA500B362F1 /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
+		2DD60FE02BC11BAD00B362F1 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
+		2DD60FE52BC123ED00B362F1 /* WelcomeViewController_AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_AutoLayout.swift; sourceTree = "<group>"; };
+		2DD60FE72BC123FE00B362F1 /* LoginViewController_AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_AutoLayout.swift; sourceTree = "<group>"; };
+		2DD60FED2BC1297200B362F1 /* WelcomeViewController_SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_SnapKit.swift; sourceTree = "<group>"; };
+		2DD60FEF2BC1298800B362F1 /* LoginViewController_SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_SnapKit.swift; sourceTree = "<group>"; };
+		2DD60FF22BC131A000B362F1 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD60FEB2BC127AE00B362F1 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,11 +136,10 @@
 				2DA6CAF32BB9CB4400BDB26A /* Font */,
 				2D5434CF2BB7D7C000842809 /* AppDelegate.swift */,
 				2D5434D12BB7D7C000842809 /* SceneDelegate.swift */,
-				2D5435012BB7E92C00842809 /* WelcomeViewController.swift */,
-				2D5434FF2BB7E4B300842809 /* LoginViewController.swift */,
-				2D5434D32BB7D7C000842809 /* ViewController.swift */,
+				2DD60FD82BC1146300B362F1 /* 1st */,
 				2D5434D52BB7D7C000842809 /* Main.storyboard */,
 				2D5434D82BB7D7C200842809 /* Assets.xcassets */,
+				2DD60FD92BC1146B00B362F1 /* 2rd */,
 				2D5434DA2BB7D7C200842809 /* LaunchScreen.storyboard */,
 				2D5434DD2BB7D7C200842809 /* Info.plist */,
 			);
@@ -143,6 +162,72 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		2DD60FD82BC1146300B362F1 /* 1st */ = {
+			isa = PBXGroup;
+			children = (
+				2D5435012BB7E92C00842809 /* WelcomeViewController.swift */,
+				2D5434FF2BB7E4B300842809 /* LoginViewController.swift */,
+				2D5434D32BB7D7C000842809 /* ViewController.swift */,
+			);
+			path = 1st;
+			sourceTree = "<group>";
+		};
+		2DD60FD92BC1146B00B362F1 /* 2rd */ = {
+			isa = PBXGroup;
+			children = (
+				2DD60FF12BC1315900B362F1 /* ScrollView */,
+				2DD60FEC2BC1295C00B362F1 /* SnapKit */,
+				2DD60FE42BC123C000B362F1 /* AutoLayout */,
+				2DD60FE32BC11C7400B362F1 /* DelegatePattern */,
+				2DD60FE22BC11C6800B362F1 /* Closure */,
+			);
+			path = 2rd;
+			sourceTree = "<group>";
+		};
+		2DD60FE22BC11C6800B362F1 /* Closure */ = {
+			isa = PBXGroup;
+			children = (
+				2DD60FDE2BC11BA500B362F1 /* WelcomeViewController_Closure.swift */,
+				2DD60FE02BC11BAD00B362F1 /* LoginViewController_Closure.swift */,
+			);
+			path = Closure;
+			sourceTree = "<group>";
+		};
+		2DD60FE32BC11C7400B362F1 /* DelegatePattern */ = {
+			isa = PBXGroup;
+			children = (
+				2DD60FDC2BC114AD00B362F1 /* WelcomeViewController_DelegatePattern.swift */,
+				2DD60FDA2BC1149C00B362F1 /* LoginViewController_DelegatePattern.swift */,
+			);
+			path = DelegatePattern;
+			sourceTree = "<group>";
+		};
+		2DD60FE42BC123C000B362F1 /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2DD60FE52BC123ED00B362F1 /* WelcomeViewController_AutoLayout.swift */,
+				2DD60FE72BC123FE00B362F1 /* LoginViewController_AutoLayout.swift */,
+			);
+			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		2DD60FEC2BC1295C00B362F1 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				2DD60FED2BC1297200B362F1 /* WelcomeViewController_SnapKit.swift */,
+				2DD60FEF2BC1298800B362F1 /* LoginViewController_SnapKit.swift */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		2DD60FF12BC1315900B362F1 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				2DD60FF22BC131A000B362F1 /* ScrollView.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +244,9 @@
 			dependencies = (
 			);
 			name = "34th-Sopt-Seminar";
+			packageProductDependencies = (
+				2DD60FEA2BC127AE00B362F1 /* SnapKit */,
+			);
 			productName = "34th-Sopt-Seminar";
 			productReference = 2D5434CC2BB7D7C000842809 /* 34th-Sopt-Seminar.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +319,9 @@
 				Base,
 			);
 			mainGroup = 2D5434C32BB7D7C000842809;
+			packageReferences = (
+				2DD60FE92BC127AE00B362F1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2D5434CD2BB7D7C000842809 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,9 +375,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D5435002BB7E4B300842809 /* LoginViewController.swift in Sources */,
+				2DD60FF32BC131A000B362F1 /* ScrollView.swift in Sources */,
 				2D5435022BB7E92C00842809 /* WelcomeViewController.swift in Sources */,
+				2DD60FF02BC1298800B362F1 /* LoginViewController_SnapKit.swift in Sources */,
+				2DD60FDD2BC114AD00B362F1 /* WelcomeViewController_DelegatePattern.swift in Sources */,
+				2DD60FDB2BC1149C00B362F1 /* LoginViewController_DelegatePattern.swift in Sources */,
+				2DD60FE62BC123ED00B362F1 /* WelcomeViewController_AutoLayout.swift in Sources */,
+				2DD60FE12BC11BAD00B362F1 /* LoginViewController_Closure.swift in Sources */,
 				2D5434D42BB7D7C000842809 /* ViewController.swift in Sources */,
+				2DD60FE82BC123FE00B362F1 /* LoginViewController_AutoLayout.swift in Sources */,
+				2DD60FDF2BC11BA500B362F1 /* WelcomeViewController_Closure.swift in Sources */,
 				2D5434D02BB7D7C000842809 /* AppDelegate.swift in Sources */,
+				2DD60FEE2BC1297200B362F1 /* WelcomeViewController_SnapKit.swift in Sources */,
 				2D5434D22BB7D7C000842809 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +735,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DD60FE92BC127AE00B362F1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DD60FEA2BC127AE00B362F1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DD60FE92BC127AE00B362F1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D5434C42BB7D7C000842809 /* Project object */;
 }
