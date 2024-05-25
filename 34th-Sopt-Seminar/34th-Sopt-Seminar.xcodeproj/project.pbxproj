@@ -14,6 +14,13 @@
 		2D5434DC2BB7D7C200842809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5434DA2BB7D7C200842809 /* LaunchScreen.storyboard */; };
 		2D5435002BB7E4B300842809 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5434FF2BB7E4B300842809 /* LoginViewController.swift */; };
 		2D5435022BB7E92C00842809 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5435012BB7E92C00842809 /* WelcomeViewController.swift */; };
+		2D8BFB202C01C27200708465 /* LoginViewController_DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8BFB1F2C01C27200708465 /* LoginViewController_DI.swift */; };
+		2D8BFB222C01C28200708465 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8BFB212C01C28200708465 /* ViewModelType.swift */; };
+		2D8BFB242C01C28F00708465 /* LoginViewModel_Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8BFB232C01C28F00708465 /* LoginViewModel_Rx.swift */; };
+		2D8BFB262C01C29E00708465 /* LoginViewController_Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8BFB252C01C29E00708465 /* LoginViewController_Rx.swift */; };
+		2D8BFB282C01C2AD00708465 /* LoginViewController_LiveCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8BFB272C01C2AD00708465 /* LoginViewController_LiveCoding.swift */; };
+		2D8BFB2B2C01C2E500708465 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2D8BFB2A2C01C2E500708465 /* RxCocoa */; };
+		2D8BFB2D2C01C2E500708465 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 2D8BFB2C2C01C2E500708465 /* RxRelay */; };
 		2D9E88762C01C0D000F5082A /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9E88752C01C0D000F5082A /* Toast.swift */; };
 		2D9E88782C01C0E400F5082A /* ObservablePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9E88772C01C0E400F5082A /* ObservablePattern.swift */; };
 		2D9E887A2C01C0F800F5082A /* LoginViewController_MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9E88792C01C0F800F5082A /* LoginViewController_MVVM.swift */; };
@@ -93,6 +100,11 @@
 		2D5434EC2BB7D7C200842809 /* 34th-Sopt-SeminarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "34th-Sopt-SeminarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5434FF2BB7E4B300842809 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2D5435012BB7E92C00842809 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2D8BFB1F2C01C27200708465 /* LoginViewController_DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_DI.swift; sourceTree = "<group>"; };
+		2D8BFB212C01C28200708465 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		2D8BFB232C01C28F00708465 /* LoginViewModel_Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel_Rx.swift; sourceTree = "<group>"; };
+		2D8BFB252C01C29E00708465 /* LoginViewController_Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Rx.swift; sourceTree = "<group>"; };
+		2D8BFB272C01C2AD00708465 /* LoginViewController_LiveCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_LiveCoding.swift; sourceTree = "<group>"; };
 		2D9E88752C01C0D000F5082A /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		2D9E88772C01C0E400F5082A /* ObservablePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservablePattern.swift; sourceTree = "<group>"; };
 		2D9E88792C01C0F800F5082A /* LoginViewController_MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_MVVM.swift; sourceTree = "<group>"; };
@@ -145,8 +157,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8BFB2D2C01C2E500708465 /* RxRelay in Frameworks */,
 				2DD6ECAB2BDCC84A00949D97 /* Moya in Frameworks */,
 				2DD6ECC62BDCD02600949D97 /* Then in Frameworks */,
+				2D8BFB2B2C01C2E500708465 /* RxCocoa in Frameworks */,
 				2DD60FEB2BC127AE00B362F1 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,8 +214,21 @@
 				2D5434DD2BB7D7C200842809 /* Info.plist */,
 				2DD6ECC32BDCCF0A00949D97 /* 4th */,
 				2D9E88742C01C0AC00F5082A /* 6th */,
+				2D8BFB1E2C01C24600708465 /* 7th */,
 			);
 			path = "34th-Sopt-Seminar";
+			sourceTree = "<group>";
+		};
+		2D8BFB1E2C01C24600708465 /* 7th */ = {
+			isa = PBXGroup;
+			children = (
+				2D8BFB1F2C01C27200708465 /* LoginViewController_DI.swift */,
+				2D8BFB212C01C28200708465 /* ViewModelType.swift */,
+				2D8BFB232C01C28F00708465 /* LoginViewModel_Rx.swift */,
+				2D8BFB252C01C29E00708465 /* LoginViewController_Rx.swift */,
+				2D8BFB272C01C2AD00708465 /* LoginViewController_LiveCoding.swift */,
+			);
+			path = 7th;
 			sourceTree = "<group>";
 		};
 		2D9E88742C01C0AC00F5082A /* 6th */ = {
@@ -410,6 +437,8 @@
 				2DD60FEA2BC127AE00B362F1 /* SnapKit */,
 				2DD6ECAA2BDCC84A00949D97 /* Moya */,
 				2DD6ECC52BDCD02600949D97 /* Then */,
+				2D8BFB2A2C01C2E500708465 /* RxCocoa */,
+				2D8BFB2C2C01C2E500708465 /* RxRelay */,
 			);
 			productName = "34th-Sopt-Seminar";
 			productReference = 2D5434CC2BB7D7C000842809 /* 34th-Sopt-Seminar.app */;
@@ -487,6 +516,7 @@
 				2DD60FE92BC127AE00B362F1 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2DD6ECA92BDCC84A00949D97 /* XCRemoteSwiftPackageReference "Moya" */,
 				2DD6ECC42BDCD02600949D97 /* XCRemoteSwiftPackageReference "Then" */,
+				2D8BFB292C01C2E500708465 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 2D5434CD2BB7D7C000842809 /* Products */;
 			projectDirPath = "";
@@ -543,10 +573,12 @@
 				2D5435002BB7E4B300842809 /* LoginViewController.swift in Sources */,
 				2DD09A482BD3A3EA0095DA9B /* ItemCollectionViewCell.swift in Sources */,
 				2DD60FF32BC131A000B362F1 /* ScrollView.swift in Sources */,
+				2D8BFB242C01C28F00708465 /* LoginViewModel_Rx.swift in Sources */,
 				2DD09A4A2BD3A74C0095DA9B /* ItemModel.swift in Sources */,
 				2D5435022BB7E92C00842809 /* WelcomeViewController.swift in Sources */,
 				2D9E88802C01C12400F5082A /* LoginViewModel_Observable.swift in Sources */,
 				2DD6ECAD2BDCCB5700949D97 /* Config.swift in Sources */,
+				2D8BFB262C01C29E00708465 /* LoginViewController_Rx.swift in Sources */,
 				2DD60FF02BC1298800B362F1 /* LoginViewController_SnapKit.swift in Sources */,
 				2DD60FDD2BC114AD00B362F1 /* WelcomeViewController_DelegatePattern.swift in Sources */,
 				2DD60FDB2BC1149C00B362F1 /* LoginViewController_DelegatePattern.swift in Sources */,
@@ -554,15 +586,18 @@
 				2D9E88782C01C0E400F5082A /* ObservablePattern.swift in Sources */,
 				2DD60FE62BC123ED00B362F1 /* WelcomeViewController_AutoLayout.swift in Sources */,
 				2DD60FE12BC11BAD00B362F1 /* LoginViewController_Closure.swift in Sources */,
+				2D8BFB202C01C27200708465 /* LoginViewController_DI.swift in Sources */,
 				2DD6ECBF2BDCCECA00949D97 /* CheckUserInfoViewController.swift in Sources */,
 				2D9E887C2C01C10800F5082A /* LoginViewController_MVVMObservable.swift in Sources */,
 				2D5434D42BB7D7C000842809 /* ViewController.swift in Sources */,
 				2DD6ECCB2BDCE22100949D97 /* LoginResponseModel.swift in Sources */,
 				2DD6ECBC2BDCCE7900949D97 /* UserService.swift in Sources */,
 				2DD09A412BD38DED0095DA9B /* ChatTableViewCell.swift in Sources */,
+				2D8BFB222C01C28200708465 /* ViewModelType.swift in Sources */,
 				2DD6ECB12BDCCE1D00949D97 /* MoyaLoggingPlugin.swift in Sources */,
 				2DD09A3C2BD388A70095DA9B /* LoginView.swift in Sources */,
 				2DD6ECB82BDCCE6A00949D97 /* SignUpViewController.swift in Sources */,
+				2D8BFB282C01C2AD00708465 /* LoginViewController_LiveCoding.swift in Sources */,
 				2DD60FE82BC123FE00B362F1 /* LoginViewController_AutoLayout.swift in Sources */,
 				2DD6ECB42BDCCE5500949D97 /* SignUpRequestModel.swift in Sources */,
 				2DD6ECB62BDCCE6100949D97 /* SignUpResponseModel.swift in Sources */,
@@ -921,6 +956,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2D8BFB292C01C2E500708465 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
 		2DD60FE92BC127AE00B362F1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -948,6 +991,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2D8BFB2A2C01C2E500708465 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D8BFB292C01C2E500708465 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		2D8BFB2C2C01C2E500708465 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D8BFB292C01C2E500708465 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
 		2DD60FEA2BC127AE00B362F1 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2DD60FE92BC127AE00B362F1 /* XCRemoteSwiftPackageReference "SnapKit" */;
